@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-
+import ghPages from 'vite-plugin-gh-pages';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  base: 'Frontend-Assignment-Sara-Kulsum', // Replace with the name of your GitHub repository
+  plugins: [react(), ghPages()],
+  base: '/Frontend-Assignment-Sara-Kulsum/', 
 })
